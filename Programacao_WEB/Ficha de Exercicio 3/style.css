@@ -9,12 +9,53 @@
 body {
 
     background-color: #e5e5e5;
-    color: #191919;
+    color:  #333;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height of the viewport */
 }
 
 .paragrafo {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #333;
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+main {
+  flex: 1; /* pushes footer to the bottom */
+}
 
 
 .container01 {
@@ -22,7 +63,7 @@ body {
     justify-content: center;
     align-items: center;    
     background-color: white;        
-    padding: 30px;
+    padding: 10px;
     flex-wrap: wrap;
 
 }
@@ -30,10 +71,10 @@ body {
 #meunome {
 
     font-family: "Inter", sans-serif;
-    color: navy;
+    color:  #333;
     font-weight: 600;
     font-style: bold;
-    font-size: 40px;
+    font-size: 20px;
     background-color: white;
     padding: 30px;
 }
@@ -81,13 +122,31 @@ h2 {
     background-color: white;        
     padding: 30px;
     flex-wrap: wrap;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
 .lista {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
 
-    margin-left: 350px;
-    margin-bottom: 20px;
+.lista li {
+  background-color: #e0e0e0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #444;
+  transition: background-color 0.3s;
+}
+
+.lista li:hover {
+  background-color: #d0d0d0;
 }
 
 .container04 {
@@ -100,7 +159,7 @@ h2 {
 }
 
 a {
-    color: navy;
+    color:  #f39c12;
     text-decoration: none;
 }
 
@@ -163,7 +222,7 @@ form {
   }
 
   input[type="enviar"] {
-    background-color: #000;
+    background-color:  #333;
     color: white;
     padding: 14px;
     border: none;
@@ -178,10 +237,29 @@ form {
 
   input[type="enviar"]:hover {
     display: flex;
-    background-color: #222;
+    background-color: #000;
     justify-content: center;
     text-align: center;
     align-items: center;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #f39c12; /* or any color you like for hover */
   }
 
 

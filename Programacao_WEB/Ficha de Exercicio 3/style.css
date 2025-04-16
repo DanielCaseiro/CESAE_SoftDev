@@ -54,7 +54,7 @@ nav ul li a:hover {
 }
 
 main {
-  flex: 1; /* pushes footer to the bottom */
+  flex: 1;
 }
 
 

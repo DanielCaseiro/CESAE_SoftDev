@@ -5,11 +5,33 @@
 
 }
 
-.carousel-inner {
-    max-height: 400px;
-  }
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 
-  .custom-img {
-    height: 400px;         
-    object-fit: cover; 
-  }
+#carouselExample {
+  max-width: 1000px;    
+  margin: 40px auto;     
+}
+
+.carousel-inner {
+  max-height: 400px !important;  
+  overflow: hidden;      
+}
+
+.carousel-inner img.carousel-img {
+  height: 400px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.carousel-img {
+  height: 400px !important;
+  object-fit: cover;
+}
+
+
+

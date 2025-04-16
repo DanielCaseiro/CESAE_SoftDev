@@ -4,3 +4,12 @@
     margin-top: 30px;
 
 }
+
+.carousel-inner {
+    max-height: 400px;
+  }
+
+  .custom-img {
+    height: 400px;         
+    object-fit: cover; 
+  }

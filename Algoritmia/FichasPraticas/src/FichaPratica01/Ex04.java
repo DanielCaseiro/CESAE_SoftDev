@@ -9,12 +9,17 @@ public class Ex04 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        double raio, area;
+        double raio, area, circunferencia;
 
         // Ler raio
         System.out.print("Por favor, introduza o raio da circunferência: ");
         raio = input.nextDouble();
 
+        // Calcular a circunferência
+        circunferencia = 2*3.14*raio;
+
+        // Apresentar o perímetro da circunferência
+        System.out.println("Circunferência: " + circunferencia);
 
         // Calcular a area
         area = 3.14*raio*raio;

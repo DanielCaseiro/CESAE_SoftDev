@@ -23,10 +23,14 @@ public class Ex01 {
         // Apresentar o maior número
         if (numero1 > numero2) {
             System.out.println("O maior número é: " + numero1);
-        }
-        else {
-            System.out.println("O maior número é: " + numero2);
-        }
+        } else {
+            if (numero2 > numero1) {
+                System.out.println("O maior número é: " + numero2);
+            } else {
+                System.out.println("Os dois números são iguais");
+            }
 
+        }
     }
+
 }

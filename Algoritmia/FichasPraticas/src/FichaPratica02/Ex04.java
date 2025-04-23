@@ -41,35 +41,35 @@ public class Ex04 {
 
         switch (lugar) {
 
-                case 1
+                case 1:
                 System.out.println("Você ganhou 10 pontos");
                 break;
 
-                case 2
+                case 2:
                 System.out.println("Você ganhou 8 pontos");
                 break;
 
-                case 3
+                case 3:
                 System.out.println("Você ganhou 6 pontos");
                 break;
 
-                case 4
+                case 4:
                 System.out.println("Você ganhou 5 pontos");
                 break;
 
-                case 5
+                case 5:
                 System.out.println("Você ganhou 4 pontos");
                 break;
 
-                case 6
+                case 6:
                 System.out.println("Você ganhou 3 pontos");
                 break;
 
-                case 7
+                case 7:
                 System.out.println("Você ganhou 2 pontos");
                 break;
 
-                case 8
+                case 8:
                 System.out.println("Você ganhou 1 pontos");
                 break;
 

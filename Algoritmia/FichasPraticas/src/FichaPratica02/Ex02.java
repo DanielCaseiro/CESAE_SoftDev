@@ -16,16 +16,15 @@ public class Ex02 {
         System.out.print("Por favor, introduza o salário: ");
         salario = input.nextDouble();
 
-        // Calcular o imposto
+        // Calcular o imposto e apresentar o valor a ser pago
         if (salario <= 1500) {
             imposto = salario * 0.2;
+            System.out.println("O imposto a ser pago é de 20%: " + imposto);
         }
         else {
             imposto = salario * 0.3;
+            System.out.println("O imposto a ser pago é de 30%: " + imposto);
         }
-
-        // Apresentar o imposto a ser pago
-            System.out.println("O imposto a ser pago é: " + imposto);
 
     }
 }

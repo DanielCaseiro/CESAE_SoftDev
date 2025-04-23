@@ -16,7 +16,7 @@ public class Ex07 {
         System.out.print("Introduz um numero: ");
         numero = input.nextInt();
 
-        // Apresentra se o numero é par ou impar
+        // Apresentar se o numero é par ou impar
         if (numero % 2 == 0) {
             System.out.println("O número é par");
         }

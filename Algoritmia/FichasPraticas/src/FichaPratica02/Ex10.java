@@ -10,7 +10,7 @@ public class Ex10 {
         Scanner input = new Scanner(System.in);
 
         // Declarar variáveis
-        int numero1, numero2, soma, subtracao, divisao, multiplicacao;
+        int numero1, numero2, resultado;
         String operacao;
 
         // Ler numero1
@@ -21,11 +21,9 @@ public class Ex10 {
         System.out.print("Por favor, introduza o numero 2: ");
         numero2 = input.nextInt();
 
-        input.nextLine(); // ← consumir o enter do nextInt
-
         // Perguntar qual operação quer realizar
         System.out.print("Por favor, indique qual operação quer realizar. Utilize os operadores +, -, /, *: ");
-        operacao = input.nextLine();
+        operacao = input.next();
 
         // Validação da operação
 
@@ -36,21 +34,56 @@ public class Ex10 {
 
             // Apresentar o resultado
             if (operacao.equals("+")) {
-                soma = numero1 + numero2;
-                System.out.print("A soma dos dois números resulta em: " + soma);
+                resultado = numero1 + numero2;
+                System.out.print("A soma dos dois números resulta em: " + resultado);
             } else if (operacao.equals("-")) {
-                subtracao = numero1 - numero2;
-                System.out.print("A subtração dos dois números resulta em: " + subtracao);
+                resultado = numero1 - numero2;
+                System.out.print("A subtração dos dois números resulta em: " + resultado);
             } else if (operacao.equals("/")) {
-                divisao = numero1 / numero2;
-                System.out.print("A divisão dos dois números resulta em: " + divisao);
+                resultado = numero1 / numero2;
+                System.out.print("A divisão dos dois números resulta em: " + resultado);
             } else {
-                multiplicacao = numero1 * numero2;
-                System.out.print("A multiplicação dos dois números resulta em: " + multiplicacao);
+                resultado = numero1 * numero2;
+                System.out.print("A multiplicação dos dois números resulta em: " + resultado);
             }
 
 
         }
 
     }
+
+    /*
+
+    // Resolução com switch
+
+    switch (operacao) {
+
+        case "+":
+            resultado = numero1 + numero2;
+            System.out.print("A soma dos dois números resulta em: " + resultado);
+            break;
+
+        case "-":
+            resultado = numero1 - numero2;
+            System.out.print("A subtração dos dois números resulta em: " + resultado);
+            break;
+
+        case "/":
+            resultado = numero1 / numero2;
+            System.out.print("A divisão dos dois números resulta em: " + resultado);
+            break;
+
+        case "*":
+            resultado = numero1 * numero2;
+            System.out.print("A multiplicação dos dois números resulta em: " + resultado);
+            break;
+       
+        default:
+            System.out.print("Operação não reconhecida");
+            break;
+
+    }
+
+
+    */
 

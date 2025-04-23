@@ -21,6 +21,36 @@ public class Ex12 {
         System.out.print("Escolha uma opção: ");
         opcao = input.nextInt();
 
+        // Apresentar resultados
+
+        switch (opcao) {
+
+            case 1:
+                System.out.println("Criar");
+                break;
+
+            case 2:
+                System.out.println("Atualizar");
+                break;
+
+            case 3:
+                System.out.println("Eliminar");
+                break;
+
+            case 4:
+                break;
+
+            default:
+                System.out.println("Opção inválida.");
+                break;
+
+        }
+
+
+        /*
+
+        // Minha solução com if
+
         // Apresentar resultado
         if (opcao == 1) {
             System.out.println("Opção 1 selecionada.");
@@ -33,5 +63,7 @@ public class Ex12 {
         } else {
 
         }
+
+         */
     }
 }

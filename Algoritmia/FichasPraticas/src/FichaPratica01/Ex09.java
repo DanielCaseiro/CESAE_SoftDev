@@ -12,7 +12,7 @@ public class Ex09 {
         // Declarar variáveis
         String codigo;
         int dias, VenBase, SubAlim;
-        Double IRS, SegSoc, VenLiq;
+        Double IRS, SegSoc, VenLiq, VenIl;
 
         // Ler o código do funcionário
         System.out.print("Por favor, introduza o código do funcionário: ");
@@ -34,11 +34,14 @@ public class Ex09 {
         // Calcular Segurança Social
         SegSoc = (double) 0.3475 * (VenBase + SubAlim);
 
+        // Calcular o valor ilíquido a receber
+        VenIl = (double) (VenBase + SubAlim);
+
         // Calcular o valor líquido a receber
         VenLiq = (double) (VenBase + SubAlim) - IRS - 0.11*(VenBase+SubAlim);
 
         // Apresentar o valor ilíquido a receber
-        System.out.println("O valor ilíquido a receber é: " + VenBase);
+        System.out.println("O valor ilíquido a receber é: " + VenIl);
 
         // Apresentar o total do subsídio alimentação
         System.out.println("O valor total do subsídio alimentação é: " + SubAlim);

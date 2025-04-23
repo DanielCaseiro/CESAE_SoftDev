@@ -77,7 +77,7 @@ public class Ex10 {
             resultado = numero1 * numero2;
             System.out.print("A multiplicação dos dois números resulta em: " + resultado);
             break;
-       
+
         default:
             System.out.print("Operação não reconhecida");
             break;

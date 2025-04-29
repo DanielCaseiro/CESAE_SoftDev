@@ -2,6 +2,8 @@ package FichaPratica02;
 
 import java.util.Scanner;
 
+import java.util.Scanner;
+
 public class Ex13 {
 
     public static void main(String[] args) {

@@ -19,7 +19,7 @@ public class Ex16 {
 
         // Validar a operação
         if (valor % 5 != 0) {
-            System.out.print("operação inválida");
+            System.out.print("Operação inválida");
         } else {
             // Calcular o resultado
 
@@ -43,6 +43,11 @@ public class Ex16 {
 
     }
 }
+
+// Solução professor:
+//      Usar só uma variável notas.
+//      Depois de cada calculo, imprimir o valor e  atualizar as variáveis valor e notas
+//      notas de 200 são valor/200, depois print(notas), depois valor = valor % 200
 
 /*
 

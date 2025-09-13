@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@color/cesae_backgroundColor_blue"
+    >
+
+
+    <!-- txt instruções ao usuário -->
+    <TextView
+        android:id="@+id/text_instrucoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Preencha o seu username e password para continuar: "
+        android:textColor="@color/lightGray"
+        android:textSize="15sp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <!-- Username -->
+    <LinearLayout
+        android:id="@+id/layout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username:"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minWidth="200dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <!-- Password -->
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/text_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:inputType="textPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minWidth="200dp"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+    <!-- Botões -->
+
+    <Button
+        android:id="@+id/button_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTRAR"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/cesae_accentColor_blue"
+        android:layout_marginTop="40dp"
+        />
+
+    <Button
+        android:id="@+id/button_sobre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sobre"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/cesae_accentColor_blue"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+
+
+</LinearLayout>

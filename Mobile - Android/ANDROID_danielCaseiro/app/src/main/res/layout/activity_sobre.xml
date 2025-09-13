@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SobreActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/cesae_backgroundColor_yellow"
+    android:padding="50dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplicação desenvolvida como parte do curso de formação 'Software Developer', ministrado pelo CESAE Digital. Esta formação foi realizada em parceria com o programa PRO_MOV, uma iniciativa nacional integrada ao projeto Reskilling 4 Employment da União Européia que visa o desenvolvimento de competências para a requalificação profissional, com ênfase na dupla transformação verde e digital."
+        android:padding="10dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvedor: Daniel Caseiro"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formador: Vitor Santos"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginBottom="80dp"
+        android:textColor="@color/white"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/cesae_backgroundColor_blue"
+        android:layout_margin="10dp"
+        />
+
+
+
+
+</LinearLayout>

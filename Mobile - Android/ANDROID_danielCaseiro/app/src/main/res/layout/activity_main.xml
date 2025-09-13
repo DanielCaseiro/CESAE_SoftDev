@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/cesae_backgroundColor_green"
+    android:padding="10dp"
+    >
+
+    <!-- Título da Activity -->
+        <TextView
+            android:id="@+id/text_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Lista de Compras"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            />
+
+    <!-- Linha Divisória -->
+    <LinearLayout
+        android:id="@+id/layout_divisoria"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="60dp"
+        />
+
+
+        <!-- Adicionar Produto -->
+        <LinearLayout
+            android:id="@+id/layout_adicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <EditText
+                android:id="@+id/edit_adicionar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="Adicione um item à lista"
+                android:textSize="10dp"
+                android:minWidth="200dp"
+                android:textColor="@color/black"
+                android:padding="13dp"
+                />
+
+            <Button
+                android:id="@+id/button_adicionar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Adicionar"
+                android:backgroundTint="@color/cesae_accentColor_green"
+                app:cornerRadius="0dp"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout> <!-- Adicionar Produto -->
+
+    <!-- Remover Produto -->
+    <LinearLayout
+        android:id="@+id/layout_remover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        >
+
+
+        <EditText
+            android:id="@+id/edit_remover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="Remova um item da lista"
+            android:textSize="10dp"
+            android:minWidth="200dp"
+            android:textColor="@color/black"
+            android:padding="13dp"
+            />
+
+        <Button
+            android:id="@+id/button_remover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Remover"
+            android:backgroundTint="@color/cesae_backgroundColor_red"
+            app:cornerRadius="0dp"
+            android:layout_margin="10dp"
+            />
+
+
+    </LinearLayout> <!-- Remover Produto -->
+
+
+<TextView
+    android:id="@+id/text_cabecalho_lista"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/lightGray"
+    android:text="Seus produtos: "
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    />
+
+    <!-- Background branco para a ListView (não consegui mudar a cor dos elementos da ListView) -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        >
+
+        <ListView
+            android:id="@+id/list_produtos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/white" />
+
+    </LinearLayout> <!-- Background branco para a ListView -->
+
+
+    <!-- Botão voltar -->
+        <Button
+            android:id="@+id/button_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/cesae_backgroundColor_yellow"
+            android:layout_marginTop="150dp"
+            />
+
+
+
+
+
+</LinearLayout>
